@@ -8,7 +8,7 @@
 
 <sup>1</sup>Princeton University &nbsp;&nbsp;&nbsp; <sup>\*</sup>Equal contribution
 
-[![Paper](https://img.shields.io/badge/Paper-PDF-b31b1b?logo=adobeacrobatreader&logoColor=white)](https://sweeperbench.com/sweeperbench.pdf)
+[![arXiv](https://img.shields.io/badge/arXiv-2610.14096-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.14096)
 [![Blog](https://img.shields.io/badge/Blog-sweeperbench.com-3b82f6?logo=googlechrome&logoColor=white)](https://sweeperbench.com)
 [![Dataset](https://img.shields.io/badge/🤗_Dataset-SWEeper--Bench-ffcc4d)](https://huggingface.co/datasets/zlab-princeton/SWEeper-Bench)
 [![Agent traces](https://img.shields.io/badge/🤗_Agent_traces-SWEeper--Bench--traces-ffcc4d)](https://huggingface.co/datasets/zlab-princeton/SWEeper-Bench-traces)
@@ -183,7 +183,7 @@ Each task comes from a merged pull request that fixes a user-facing bug. The par
   title   = {SWEeper-Bench: Can Agents Discover Bugs in Interactive Software?},
   author  = {Yao, Yang and Chen, Haozhe and Kang, Bingyi and
              Narasimhan, Karthik R and Liu, Zhuang},
-  journal = {arXiv preprint},
+  journal = {arXiv preprint arXiv:2610.14096},
   year    = {2026}
 }
 ```
