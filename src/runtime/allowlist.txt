@@ -9,6 +9,9 @@ api.anthropic.com
 # Official OpenAI (Codex, provider=openai)
 api.openai.com
 
+# Harbor parity: 2077AI OpenAI-compatible endpoint
+app.ppapi.ai
+
 # Codex subscription inference and token refresh
 chatgpt.com
 auth.openai.com

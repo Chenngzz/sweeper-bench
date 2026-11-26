@@ -22,7 +22,8 @@ write_codex_provider_config() {
   case "$PREDICTION_PROVIDER" in
     openai)
       if [ -n "${OPENAI_API_KEY:-}" ]; then
-        base_url="https://api.openai.com/v1"
+        # Harbor parity: OPENAI_BASE_URL routes to an OpenAI-compatible endpoint.
+        base_url="${OPENAI_BASE_URL:-https://api.openai.com/v1}"
         env_key="OPENAI_API_KEY"
       elif [ -n "${CODEX_API_KEY:-}" ]; then
         return 0

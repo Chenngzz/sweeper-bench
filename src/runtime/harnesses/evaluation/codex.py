@@ -28,7 +28,8 @@ def _write_api_config(home: Path, model: str) -> dict[str, str]:
     provider = os.environ.get("EVALUATION_CODEX_PROVIDER", "openai").strip().lower()
     if provider != "openai":
         raise RuntimeError(f"Codex evaluation only accepts official provider openai, got {provider}")
-    base = "https://api.openai.com/v1"
+    # Harbor parity: OPENAI_BASE_URL routes to an OpenAI-compatible endpoint.
+    base = os.environ.get("OPENAI_BASE_URL", "").strip() or "https://api.openai.com/v1"
     env_key = "OPENAI_API_KEY" if os.environ.get("OPENAI_API_KEY") else "CODEX_API_KEY"
     if not base:
         raise RuntimeError(f"Codex API provider={provider} is missing base_url")
