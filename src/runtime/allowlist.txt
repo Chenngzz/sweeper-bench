@@ -30,6 +30,10 @@ api.kimi.com
 # Gemini CLI official (provider=gemini|google)
 generativelanguage.googleapis.com
 
+# Harbor parity: Gemini CLI on Vertex AI (provider=vertex) and its OAuth token refresh
+aiplatform.googleapis.com
+oauth2.googleapis.com
+
 # DeepSeek Harness official (provider=deepseek)
 api.deepseek.com
 
