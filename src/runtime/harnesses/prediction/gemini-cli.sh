@@ -62,6 +62,8 @@ PY
 
 export GEMINI_API_KEY
 unset GOOGLE_GEMINI_BASE_URL || true
+# Gemini CLI 0.60 ignores --yolo and exits in an untrusted folder when headless.
+export GEMINI_CLI_TRUST_WORKSPACE=true
 
 cd "$PRODUCT_DIR"
 
